@@ -1,0 +1,15 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: |
+      echo "✅ ¡El workspace de Android está siendo configurado! Esto puede tomar unos minutos..."
+      ./gradlew --version
+  - command: |
+      echo "🚀 El entorno está listo. Puedes abrir Android Studio desde 'GitPod' > 'Open View' > 'Android Studio'."
+
+ports:
+  - port: 6080
+    onOpen: ignore
+  - port: 5900
+    onOpen: ignore
